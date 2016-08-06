@@ -1,0 +1,16 @@
+extends ../layouts/layout.pug
+
+block title
+    title We Perform : liste des  utilisateurs
+
+block content
+    h1 Liste des  utilisateurs
+    div
+        p: a(href='/users/subscribe') Inscription
+
+        p: a(href='/') Accueil
+
+    div
+        ul
+            each user in users
+                li= user.username

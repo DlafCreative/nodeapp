@@ -1,0 +1,16 @@
+{
+  "name": "nodeapp",
+  "version": "1.0.0",
+  "description": "We Perfom, a node js application with Express from scratch",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.14.0",
+    "pug": "^2.0.0-beta4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tino",
+  "license": "ISC"
+}

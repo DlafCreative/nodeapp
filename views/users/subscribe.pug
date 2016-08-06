@@ -1,0 +1,21 @@
+extends ../layouts/layout.pug
+
+block title
+    title We Perform : Inscription
+
+block content
+    h1 Inscription
+    div
+        p
+            a(href='/users') Liste des utilisateurs
+
+        p
+            a(href='/') Accueil
+
+    div(ng-app='WePerformApp', ng-controller='subscribeController')
+        <form method="POST" ng-submit="doSubscribe()">
+            <input type="text" name="username" placeholder="Nom d'utilisateur" ng-model="username" />
+            <button type="submit">Valider</button>
+        </form>
+    script(type='text/javascript', src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js')
+    script(type='text/javascript', src='/js/controllers/subscribe.js')
